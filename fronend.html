@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AITCoders.com</title>
+    <!--linking the bootsrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--linking the javascript plugins in bootsrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--linking the style-->
+    <!--linking a fonts icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    .img1{
+      height: 500px;
+    }
+    .division{
+      background-color: black;
+      color: white;
+       }
+    .img2{
+      height: 250px;
+    }
+
+    </style>
+</head>
+<body>
+  <!--header page are start--> 
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-danger fs-3" href="/home.html">AITCoders</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Our Courses
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/fronend.html">Front-end</a></li>
+              <li><a class="dropdown-item" href="/backend.html">Back-end</a></li>
+              <li><a class="dropdown-item" href="/testing.html">Testing</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/digital.html">Digital Marketing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/placements.html">Placements</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+          <button type="button" class="btn btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#signinModal">SignIn</button>
+           <button type="button" class="btn btn-outline-success ms-1" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--header page are end-->
+  <!--modal property sign in starts-->
+<div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-primary" id="signinModalLabel">Login Now</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--forms starts-->
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-outline-success">Submit</button>
+        </form>
+        <!--forms end-->
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--modal property sign in end-->
+  <!--modal property signup starts-->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-primary" id="signupModalLabel">Registration Now</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- signup form starts-->
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">First Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Last Name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">I agree the terms and conditions</label>
+          </div>
+          <button type="submit" class="btn btn-outline-success">Submit</button>
+          <button type="button" class="btn btn-outline-danger ms-5" data-bs-dismiss="modal">Close</button>
+        </form>
+        <!--signup form end-->
+      </div>
+      
+    </div>
+  </div>
+</div>
+  <!--modal property signup end-->
+<!--frondend content start-->
+<br>
+<section>
+  <h2 class="text-center text-primary">Front-End Courses</h2>
+</section>
+<section>
+  <h2 class="text-start text-success mb-4">HTML</h2>
+  <img src="/Assets/Images/html2.webp" class="rounded float-end img2 img-fluid me-5" alt="about page">
+  <p class=" d-start ms-5">* HTML stands for Hyper Text Markup Language
+    HTML is the standard markup language for creating Web pages
+    HTML describes the structure of a Web page
+    HTML consists of a series of elements</p>
+  <p class=" d-start ms-5">* HTML elements tell the browser how to display the content HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</p>
+  <p class=" d-start ms-5">* The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.</p>
+</section>
+<br>
+<section>
+  <h2 class="text-start text-warning mb-4">CSS</h2>
+  <img src="/Assets/Images/css2.jpg" class="rounded float-start img2 img-fluid me-5" alt="about page">
+  <p class=" d-end ms-5 mt-5">* CSS is the language we use to style a Web page.</p>
+  <p class=" d-end ms-5">* CSS stands for Cascading Style Sheetsdescribes how HTML elements are to be displayed on screen, paper, or in other media</p>
+  <p class=" d-end ms-5">* CSS saves a lot of work. It can control the layout of multiple web pages all at once External stylesheets are stored in CSS files</p>
+</section>
+<br><br><br>
+<section>
+  <h2 class="text-start text-danger mb-4">Java Script</h2>
+  <img src="/Assets/Images/js2.jpg" class="rounded float-end img2 img-fluid me-5" alt="about page">
+  <p class=" d-start ms-5">* This page contains some examples of what JavaScript can do.</p>
+  <p class=" d-start ms-5">* JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.ECMA-262 is the official name of the standard. ECMAScript is the official name of the language. </p>
+  <p class=" d-start ms-5">* One of many JavaScript HTML methods is getElementById().The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":</p>
+</section>
+<br><br>
+<section>
+  <h2 class="text-start text-warning mb-4">Bootsrap</h2>
+  <img src="/Assets/Images/boot.png" class="rounded float-start img2 img-fluid me-5" alt="about page">
+  <p class=" d-end ms-5 mt-5">* Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with jsDelivr and a template starter page.</p>
+  <p class=" d-end ms-5">* Nowadays, the websites are perfect for all the browsers (IE, Firefox, and Chrome) and for all sizes of screens (Desktop, Tablets, Phablets, and Phones).</p>
+  <p class=" d-end ms-5">* All thanks to Bootstrap developers -Mark Otto and Jacob Thornton of Twitter, though it was later declared to be an open-source project.</p>
+</section>
+<br><br><br>
+<!--frontend content end-->
+  <!--footer page-->
+  <div class="container-fluid mt-4 division">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>COMPANY</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="/home.html" class="nav-link p-0 text-white-50">Home</a></li>
+            <li class="nav-item mb-2"><a href="/about.html" class="nav-link p-0 text-white-50">About</a></li>
+            <li class="nav-item mb-2"><a href="/contact.html" class="nav-link p-0 text-white-50">Contact Us</a></li>
+            <li class="nav-item mb-2"><a href="/placements.html" class="nav-link p-0 text-white-50">Placements</a></li>
+            </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>TRENDING COURSE</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="/fronend.html" class="nav-link p-0 text-white-50">Front End</a></li>
+            <li class="nav-item mb-2"><a href="/backend.html" class="nav-link p-0 text-white-50">Back End</a></li>
+            <li class="nav-item mb-2"><a href="/testing.html" class="nav-link p-0 text-white-50">Testing</a></li>
+            <li class="nav-item mb-2"><a href="/digital.html" class="nav-link p-0 text-white-50">Digital Marketing</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>CONTACT INFO</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;#63,1st fllor,16th main,Bangalore,India</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;India:+91 6302141236</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;info@gmail.com</a></li>
+            </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2024 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-facebook-f text-white-50"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-instagram text-white-50"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-twitter  text-white-50"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-linkedin-in text-white-50"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="fa-brands fa-youtube text-white-50"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <!--footer page end-->
+  
+</body>
+</html>
